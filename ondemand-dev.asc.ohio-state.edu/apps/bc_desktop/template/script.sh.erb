@@ -15,5 +15,5 @@ source "<%= session.staged_root.join("desktops", "#{context.desktop}.sh") %>"
 echo "Desktop '<%= context.desktop %>' ended..."
 
 #error on writing to run directory
-export XDG_RUNTIME_DIR="/tmp/${UID}"
-
+#export XDG_RUNTIME_DIR="/tmp/${UID}"
+unset XDG_RUNTIME_DIR
