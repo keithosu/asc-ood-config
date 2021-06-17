@@ -1,2 +1,4 @@
 title: "Unity Desktop"
 cluster: "unity"
+attributes:
+  desktop: "xfce"
