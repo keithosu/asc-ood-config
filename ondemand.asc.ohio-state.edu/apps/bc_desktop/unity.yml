@@ -1,4 +1,4 @@
-title: "Unity Desktop"
+title: "Unity VDI"
 cluster: "unity"
 attributes:
   desktop: "xfce"
