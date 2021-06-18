@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#moved to top
+#must be set here
 unset XDG_RUNTIME_DIR
 
 # Change working directory to user's home directory
@@ -8,6 +8,9 @@ cd "${HOME}"
 
 # Reset module environment (may require login shell for some HPC clusters)
 module purge && module restore
+
+#added to fix batch connect
+module load turbovnc && module load websockify
 
 # Ensure that the user's configured login shell is used
 export SHELL="$(getent passwd $USER | cut -d: -f7)"
@@ -17,6 +20,3 @@ echo "Launching desktop '<%= context.desktop %>'..."
 source "<%= session.staged_root.join("desktops", "#{context.desktop}.sh") %>"
 echo "Desktop '<%= context.desktop %>' ended..."
 
-#error on writing to run directory
-#export XDG_RUNTIME_DIR="/tmp/${UID}"
-unset XDG_RUNTIME_DIR
