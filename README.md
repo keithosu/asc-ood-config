@@ -7,6 +7,7 @@
 The app configuration files used for the following ASC Open OnDemand
 deployments:
 
+- ASC OnDemand Production (https://ondemand.asc.ohio-state.edu)
 - ASC OnDemand Dev (https://ondemand-dev.asc.ohio-state.edu)
 
 
