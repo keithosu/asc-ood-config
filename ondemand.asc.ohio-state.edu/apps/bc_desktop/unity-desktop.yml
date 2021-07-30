@@ -1,0 +1,35 @@
+title: "Unity Desktop"
+cluster: "unity"
+description: "This app will launch a FULL desktop on a compute node. This desktop is a scalable environment for when you need a lot of compute and/or memory resources because you will have full access to all the resources on that compute node(s). <p> If you do not need all these resources, use the Unity VDI app instead which is much more lightweight for general-purpose use cases."
+form:
+  - bc_account
+  - desktop
+  - bc_num_hours
+  - bc_queue
+  - bc_num_slots
+  - memory
+  - bc_email_on_started
+attributes:
+  desktop:
+    value: "xfce"
+  bc_account:
+    label: "Group"
+    help: "You can leave this blank and you will submit as your default group."
+  bc_queue:
+    value: "ondemand,batch"
+    help: "If your research group has their own partition specify that here. Otherwise leave default. See <a href='https://osuasc.teamdynamix.com/TDClient/1929/Portal/KB/ArticleDet?ID=130515'> Unity Partitions Article </a>"
+  bc_num_slots:
+    label: "Cores"
+    value: "1"
+  bc_account: null
+  bc_num_hours:
+    value: 20
+  memory:
+    widget: "number_field"
+    max: 190000
+    min: 2048
+    step: 2048
+    value: 4096
+    label: "Memory (MB)"
+    help: "Enter a value in MB between 2000 and 190000"
+submit: "submit/unity-desktop.yml.erb"

@@ -1,0 +1,10 @@
+title: "Unity Simple Desktop"
+cluster: "unity"
+description: "This requests a simple Desktop. A shared environment will be allocated with defaults of 3GB and 1 core. Desktops requested will be avaialble quickly"
+attributes:
+  desktop: "xfce"
+  bc_queue: "ondemand,batch"
+  bc_num_slots: "1"
+  bc_account: null
+  bc_num_hours:
+    value: 1
