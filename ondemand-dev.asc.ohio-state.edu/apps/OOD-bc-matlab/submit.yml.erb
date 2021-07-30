@@ -1,0 +1,16 @@
+---
+batch_connect:
+  template: vnc
+script:
+  native:
+    <%- if node_type != "any" -%>
+    - "-C"
+    - "<%= node_type %>"
+    <%- end -%>
+    - "--ntasks=<%= bc_num_slots.blank? ? 1 : bc_num_slots.to_i %>"
+    - "--mem"
+    - "<%= memory %>M"
+    - "--nodes=1"
+
+
+
