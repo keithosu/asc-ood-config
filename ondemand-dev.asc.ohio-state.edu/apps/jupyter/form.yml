@@ -3,12 +3,10 @@
 # @note Used to define the submitted cluster, title, description, and
 #   hard-coded/user-defined attributes that make up this Batch Connect app.
 ---
-
-# **MUST** set cluster id here that matches cluster configuration file located
-# under /etc/ood/config/clusters.d/*.yml
-# @example Use the Owens cluster at Ohio Supercomputer Center
-#     cluster: "owens"
+title: "Jupyter Notebook"
 cluster: "unity"
+description: "This app will launch a Juypter notebook"
+
 
 # Define attribute values that aren't meant to be modified by the user within
 # the Dashboard form
@@ -43,10 +41,11 @@ attributes:
 form:
   - modules
   - extra_jupyter_args
-  - bc_account
   - bc_queue
+  - bc_account
   - bc_num_hours
   - bc_num_slots
+  - memory
   - bc_email_on_started
 
 attributes:
