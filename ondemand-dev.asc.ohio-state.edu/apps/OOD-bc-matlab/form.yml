@@ -4,7 +4,9 @@ cluster: "unity"
 description: |
   This app will launch a MATLAB GUI on one or more Unity nodes.
 attributes:
-  bc_num_slots: "1"
+  bc_num_slots:
+    label: "Cores"
+    value: "1"
   bc_vnc_resolution:
     required: true
   version:
@@ -16,7 +18,6 @@ attributes:
       - [ "R2020b", "matlab/R2020b" ]
       - [ "R2020a", "matlab/R2020a" ]
       - [ "R2019b", "matlab/R2019b" ]
-
   node_type: any
   memory:
     widget: "number_field"
