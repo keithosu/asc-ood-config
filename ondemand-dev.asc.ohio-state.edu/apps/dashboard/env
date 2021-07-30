@@ -1,4 +1,5 @@
-OOD_APP_DEVELOPMENT=1
+OOD_APP_DEVELOPMENT=0
 OOD_DASHBOARD_DEV_DOCS_URL="https://osc.github.io/ood-documentation/master/app-development.html"
 OOD_DEV_SSH_HOST="ondemand-dev.asc.ohio-state.edu"
-OOD_DASHBOARD_SUPPORT_URL="https://osuasc.teamdynamix.com/TDClient/1929/Portal/KB/?CategoryID=12831"
+#SHOW_ALL_APPS_LINK=false
+
