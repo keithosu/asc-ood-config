@@ -21,9 +21,8 @@ attributes:
   bc_num_slots:
     label: "Cores"
     value: "1"
-  bc_account: null
   bc_num_hours:
-    value: 20
+    value: 1
   memory:
     widget: "number_field"
     max: 190000
