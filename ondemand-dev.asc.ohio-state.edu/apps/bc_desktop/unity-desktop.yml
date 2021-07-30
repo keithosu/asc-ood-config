@@ -30,5 +30,5 @@ attributes:
     step: 2048
     value: 4096
     label: "Memory (MB)"
-    help: "Enter a value in MB between 2000 and 190000"
+    help: "Enter a value in MB between 2048 and 190000"
 submit: "submit/unity-desktop.yml.erb"
