@@ -17,7 +17,7 @@ attributes:
     help: "You can leave this blank and you will submit as your default group."
   bc_queue:
     value: "ondemand,batch"
-    help: "If your research group has their own partition specify that here. Otherwise leave default. See <a href="https://osuasc.teamdynamix.com/TDClient/1929/Portal/KB/ArticleDet?ID=130515"> Unity Partitions Article </a>
+    help: "If your research group has their own partition specify that here. Otherwise leave default. See <a href='https://osuasc.teamdynamix.com/TDClient/1929/Portal/KB/ArticleDet?ID=130515'> Unity Partitions Article </a>"
   bc_num_slots:
     label: "Cores"
     value: "1"

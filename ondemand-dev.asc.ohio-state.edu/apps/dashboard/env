@@ -2,4 +2,6 @@ OOD_APP_DEVELOPMENT=0
 OOD_DASHBOARD_DEV_DOCS_URL="https://osc.github.io/ood-documentation/master/app-development.html"
 OOD_DEV_SSH_HOST="ondemand-dev.asc.ohio-state.edu"
 #SHOW_ALL_APPS_LINK=false
+MOTD_PATH="/etc/motd" # this supports both file and RSS feed URIs
+MOTD_FORMAT="txt" # markdown, txt, rss, markdown_erb, txt_erb
 

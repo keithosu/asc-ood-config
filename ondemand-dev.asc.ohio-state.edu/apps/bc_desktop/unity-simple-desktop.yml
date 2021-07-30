@@ -1,6 +1,6 @@
-title: " Unity Simple Desktop"
+title: "Unity Simple Desktop"
 cluster: "unity"
-description: "This is a simple Desktop. Shared environments will be used with defaults of 3GB and 1 core. Desktops requested will be avaialble quickly"
+description: "This requests a simple Desktop. A shared environment will be allocated with defaults of 3GB and 1 core. Desktops requested will be avaialble quickly"
 attributes:
   desktop: "xfce"
   bc_queue: "ondemand,batch"
