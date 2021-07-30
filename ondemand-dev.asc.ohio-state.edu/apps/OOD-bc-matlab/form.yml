@@ -1,0 +1,45 @@
+---
+title: "MATLAB"
+cluster: "unity"
+description: |
+  This app will launch a MATLAB GUI on one or more Unity nodes.
+attributes:
+  bc_num_slots: "1"
+  bc_vnc_resolution:
+    required: true
+  version:
+    widget: select
+    label: "MATLAB version"
+    help: "This defines the version of MATLAB you want to load."
+    options:
+      - [ "R2021a", "matlab/r2021a" ]
+      - [ "R2020b", "matlab/R2020b" ]
+      - [ "R2020a", "matlab/R2020a" ]
+      - [ "R2019b", "matlab/R2019b" ]
+
+  node_type: any
+  memory:
+    widget: "number_field"
+    max: 190000
+    min: 2048
+    step: 2048
+    value: 4096
+    label: "Memory (MB)"
+    help: "Enter a value in MB between 2048 and 190000"
+  bc_account:
+    label: "Account"
+    help: "If left blank default account will be used"
+  bc_queue:
+    label: "Partition"
+    value: null
+    help: "If left blank default partition will be used"
+form:
+  - version
+  - bc_num_slots
+  - memory
+  - bc_num_hours
+  - bc_account
+  - bc_queue
+  - node_type
+  - bc_vnc_resolution
+  - bc_email_on_started
