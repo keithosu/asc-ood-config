@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH -J ondemand/sys/myjobs/basic_sequential
 #SBATCH --time=00:01:00
-#SBATCH --nodes=1
-#SBATCH -n
+#SBATCH -N 1
+#SBATCH -n 1
 
 # The following is an example of a single-processor sequential job that uses $TMPDIR as its working area.
 # This batch script copies the script file and input file from the directory the
